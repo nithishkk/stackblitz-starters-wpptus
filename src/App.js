@@ -5,10 +5,13 @@ const data = [
   { id: 2, name: "megana" }
 ];
 export default function App() {
-  const ListItem=[]
+   const ListItem=[]
   for (let i = 0; i < data.length; i++) {
+    // const ListItem=[]
     ListItem.push(<li key={data[i].id}>{data[i].name}</li>);
+  
   }
+  return ListItem
 // for (const i =0 ;i<data.length;i++){
 //   // ListItem.push(<li key={data[i].id>{data[i].name}</li>);
 //   ListItem.push(<li key={data[i].id}>{data[i].name}</li>);
